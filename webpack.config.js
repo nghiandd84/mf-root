@@ -27,7 +27,7 @@ module.exports = (webpackConfigEnv, argv) => {
         : "https://nghiandd84.github.io/mf-user/mf-user-mf-app.js",
       "@mf-dashboard/mf-app": isLocal
         ? "http://localhost:8502/mf-dashboard-mf-app.js"
-        : "https://nghiandd84.github.io/mf-user/mf-dashboard-mf-app.js",
+        : "https://nghiandd84.github.io/mf-dashboard/mf-dashboard-mf-app.js",
       "@mf-app/root-app": isLocal
         ? "http://localhost:9000/mf-root-mf-app.js"
         : "https://nghiandd84.github.io/mf-root/mf-root-mf-app.js",
@@ -35,7 +35,6 @@ module.exports = (webpackConfigEnv, argv) => {
         "https://cdn.jsdelivr.net/npm/@esm-bundle/rxjs@6.6.3/system/es2015/rxjs.min.js",
     },
   };
-  console.log(isLocal);
   return merge(
     defaultConfig,
     {
